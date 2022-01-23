@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+        body {
+            padding-left: 2%;
+        }
+    	main {
+            background-color: none;
+        }
+        #text {
+            float:left;
+            background-color: none;
+            width: 50%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-size: 80px;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        #p1 {
+            font-size: 28px;
+            color: lightgray;
+            width: 75%;
+            padding-top: 25px;
+            margin-top: 0;
+        }
+        #p2, #p3 {
+            font-size: 18px;
+            color: rgb(157, 156, 156);
+            width: 80%;
+        }
+        #p3 {
+            padding-top: 15px;
+        }
+        #buttons {
+            background-color: none;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            font-size: 0;
+        }
+        #picture {
+            float: left;
+            background-color: blue;
+            width: 50%;
+            font-size: 0;
+        }
+        #gallery {
+            background-color: red;
+            width: 100%;
+        }
+        .clear::after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+        img {
+            width: 100%;
+        }   
+        #likes {
+            width: 100px;
+            text-decoration: none;
+            padding-right: 0;
+            margin-right: 0;
+        }     
+        #twitter {
+            width: 180px;
+            text-decoration: none;
+            padding-left: 0;
+            margin-left: 0;
+            padding-bottom: 1px;
+        }
+    </style>
+</head>
+<body>
+    <main class="clear">
+        <div id="text">
+            <h1>about me</h1>
+            <p id="p1">I'm a UI Designer and Front End Developer from Sydney, Australia.</p>
+            <p id="p2">Praesent erat dolor, viverra pellentesque neque eget, venenatis posuere ipsum. Fusce porta nulla convallis metus hendrerit aliquam sed et orci. Nam porta nibh accumsan nisl condimentum, in fermentum lacus lobortis. </p>
+            <p id="p3">Nullam iaculis, velit id cursus posuere, diam risus sodales libero, sed efficitur magna diam non lorem. </p>
+            <div id="buttons">
+                <a href="dizainas1float.html">
+                    <img id="likes" src="dizainas1/pictures/like.png" alt="like"/>
+                </a> 
+                <a href="dizainas1float.html">
+                    <img id="twitter" src="dizainas1/pictures/twitter.png" alt="twitter"/>
+                </a> 
+            </div>
+        </div>
+        <div id="picture">
+            <img src="./dizainas1/pictures/face.png" alt="face">
+        </div>
+    </main>
+    <footer id="gallery">
+        <div> Gallery</div>     
+    </footer>
+</body>
+</html>
+
