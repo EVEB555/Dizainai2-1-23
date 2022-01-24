@@ -42,22 +42,32 @@
         }
         #picture {
             float: left;
-            background-color: blue;
+            position: relative;
+            background-color: none;
             width: 50%;
             font-size: 0;
+            background-image: url("dizainas1/pictures/face.png");
+            height: 600px;
+            background-repeat: no-repeat;
+            background-position: left bottom;
+            background-size: contain;
         }
         #gallery {
-            background-color: red;
+            background-color: none;
             width: 100%;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            border-top: 3px solid rgb(243, 243, 243);
         }
         .clear::after {
             clear: both;
             content: "";
             display: table;
         }
-        img {
+        /*img {
             width: 100%;
-        }   
+                        
+        } */
         #likes {
             width: 100px;
             text-decoration: none;
@@ -70,6 +80,21 @@
             padding-left: 0;
             margin-left: 0;
             padding-bottom: 1px;
+        }
+        .pic {
+            float: left;
+            width: 13%;
+            border: 2px solid rgb(241, 241, 241);
+            border-radius: 5px;
+            padding: 4px 2px;
+            box-shadow: 2px 2px 2px rgb(233, 233, 233);
+            margin-left: 3%;
+        }
+        .pic:first-child {
+            margin-left: 0px;
+        }
+        .pic:last-child {
+            margin-right: 0px;
         }
     </style>
 </head>
@@ -90,11 +115,18 @@
             </div>
         </div>
         <div id="picture">
-            <img src="./dizainas1/pictures/face.png" alt="face">
+         <!-----   <img src="./dizainas1/pictures/face.png" alt="face">--->
         </div>
     </main>
     <footer id="gallery">
-        <div> Gallery</div>     
+        <div> 
+            <img class="pic" src="dizainas1/pictures/1.jpg" alt="gallery1"/>
+            <img class="pic" src="dizainas1/pictures/2.jpg" alt="gallery2"/>
+            <img class="pic" src="dizainas1/pictures/3.jpg" alt="gallery3"/>
+            <img class="pic" src="dizainas1/pictures/4.jpg" alt="gallery4"/>
+            <img class="pic" src="dizainas1/pictures/5.jpg" alt="gallery5"/>
+            <img class="pic" src="dizainas1/pictures/6.jpg" alt="gallery6"/>
+        </div>     
     </footer>
 </body>
 </html>
