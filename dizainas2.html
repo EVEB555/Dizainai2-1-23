@@ -17,45 +17,88 @@
             background-size: contain;              
         }
         main {
-            background-color: blue;
+            background-color: none;
                 
         }
         #content {
-            background-color: yellow;
+            background-color: none;
             width: 100%;
             display: inline-block;
             position: relative;
         }
         #text1 {
-            background-color: red;
-            width: 50%;
+            background-color: none;
+            width: 60%;
             position: relative;
-            font-size: 34px;
+            font-size: 38px;
             font-family: 'Courier New', Courier, monospace;
             display: inline-block;
+            color: rgb(108, 108, 108);
         }
         #text2 {
-            background-color: pink;
+            background-color: none;
             width: 30%;
             position: relative;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 14px;
-            top: 3%;
-            margin-left: 40px;
+            line-height: 170%;
+            margin-left: 0px;
             padding-left: 5%;  
+            margin-top: 2%;
             display: inline-block;
+            color: rgb(108, 108, 108);
         }
         #list {
-            background-color: green;
+            background-color: none;
         }
         ul {
             padding-top: 20px;
+            padding-left: 0;
+            padding-right: 0;
+            margin-right: 0;
         }
         li {
             display: inline-block;
             list-style-type: none;
+            padding-right: 3%;
         }
-        
+        li:last-child {
+            padding-right: 0;
+        }
+        li > div {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 0;
+            color: rgb(108, 108, 108);
+        }
+        img {
+            border: 3px solid rgb(231, 231, 231);
+            border-radius: 3px;
+            padding: 7px;        
+        }
+        h1 {
+            font-weight: lighter;
+            font-size: 22px;
+            text-transform: uppercase;
+            margin-bottom: 0;
+        }
+        .position {
+            margin-top: 5px;
+            margin-bottom: 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: rgb(73, 73, 73);
+        }
+        .mail {
+            font-size: 12px;
+        }
+        .bold {
+            font-weight: bold;
+            color: rgb(73, 73, 73);
+        }
+        .color {
+            color: rgb(73, 73, 73);
+        }
     </style>
 </head>
 <body>
@@ -64,12 +107,12 @@
             <div id="content">
                 <div id="text1">
                     <p>
-                        We do everything with our core values of honesty, hard work and trust.
+                        We do everything with our core values of <span class="color">honesty</span>, hard <span class="color">work</span> and <span class="color">trust.</span>
                     </p>
                 </div>
                 <div id="text2">
                     <p>
-                        Vivamus erat nibh, tempus id venenatis bibendum, mollis malesuada lectus. Aenean ligula lacus, hendrerit malesuada tincidunt eget, consectetur in arcu. Proin a aliquam erat, vel egestas lorem. Aliquam at finibus elit. 
+                        <span class="bold">Vivamus erat nibh, tempus id</span> venenatis bibendum, mollis malesuada lectus. Aenean ligula lacus, hendrerit malesuada tincidunt eget, consectetur in arcu. Proin a aliquam erat, vel egestas lorem. Aliquam at finibus elit. 
                     </p>
                 </div>
             </div>
@@ -79,30 +122,60 @@
                         <img src="dizainas2/1.png" alt="1" />
                         <div>
                             <h1>Eric Downs</h1>
+                            <p class="position">
+                                Creative director
+                            </p>
+                            <p class="mail">
+                                eirc@blablablablablabla.com
+                            </p>
                         </div>
                    </li>
                    <li>
                         <img src="dizainas2/2.png" alt="2" />
                         <div>
                             <h1>Mike Dekay</h1>
+                            <p class="position">
+                                Creative director
+                            </p>
+                            <p class="mail">
+                                mike@blablablablablabla.com
+                            </p>
                         </div>
                    </li>
                    <li>
                         <img src="dizainas2/3.png" alt="3" />
                         <div>
                             <h1>Kristin Dekay</h1>
+                            <p class="position">
+                                Operations director
+                            </p>
+                            <p class="mail">
+                                kristin@blablablablablabla.com
+                            </p>
                         </div>
                    </li>
                    <li>
                         <img src="dizainas2/4.png" alt="4" />
                         <div>
                             <h1>Miranda Bouck</h1>
+                            <p class="position">
+                                Designer
+                            </p>
+                            <p class="mail">
+                                miranda@blablablablablabla.com
+                            </p>
                         </div>
                    </li>
                    <li>
                         <img src="dizainas2/5.png" alt="5" />
                         <div>
                             <h1>Jesse Harding</h1>
+                            <p class="position">
+                                Designer
+                            </p>
+                            <p class="mail">
+                                jesse@blablablablablabla.com
+                            </p>
                         </div>
                    </li>
                </ul> 
